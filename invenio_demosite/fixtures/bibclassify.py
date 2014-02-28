@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 ## This file is part of Invenio.
-## Copyright (C) 2013 CERN.
+## Copyright (C) 2013, 2014 CERN.
 ##
 ## Invenio is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -21,29 +21,29 @@ from fixture import DataSet
 from .websearch import CollectionData
 
 
-class ClsMETHODData(DataSet):
+# class ClsMETHODData(DataSet):
 
-    class ClsMETHOD_1:
-        id = 1
-        last_updated = None
-        description = u'High Energy Physics Taxonomy'
-        name = u'HEP'
-        location = u'http://invenio-software.org/download/invenio-demo-site-files/HEP.rdf'
+#     class ClsMETHOD_1:
+#         id = 1
+#         last_updated = None
+#         description = u'High Energy Physics Taxonomy'
+#         name = u'HEP'
+#         location = u'http://invenio-software.org/download/invenio-demo-site-files/HEP.rdf'
 
-    class ClsMETHOD_2:
-        id = 2
-        last_updated = None
-        description = u'NASA Subjects'
-        name = u'NASA-subjects'
-        location = u'http://invenio-software.org/download/invenio-demo-site-files/NASA-subjects.rdf'
+#     class ClsMETHOD_2:
+#         id = 2
+#         last_updated = None
+#         description = u'NASA Subjects'
+#         name = u'NASA-subjects'
+#         location = u'http://invenio-software.org/download/invenio-demo-site-files/NASA-subjects.rdf'
 
 
-class CollectionClsMETHODData(DataSet):
+# class CollectionClsMETHODData(DataSet):
 
-    class CollectionClsMETHOD_12_2:
-        id_clsMETHOD = ClsMETHODData.ClsMETHOD_2.ref('id')
-        id_collection = CollectionData.experimentalPhysics.ref('id')
+#     class CollectionClsMETHOD_12_2:
+#         id_clsMETHOD = ClsMETHODData.ClsMETHOD_2.ref('id')
+#         id_collection = CollectionData.experimentalPhysics.ref('id')
 
-    class CollectionClsMETHOD_2_1:
-        id_clsMETHOD = ClsMETHODData.ClsMETHOD_1.ref('id')
-        id_collection = CollectionData.preprints.ref('id')
+#     class CollectionClsMETHOD_2_1:
+#         id_clsMETHOD = ClsMETHODData.ClsMETHOD_1.ref('id')
+#         id_collection = CollectionData.preprints.ref('id')

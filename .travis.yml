@@ -60,7 +60,7 @@ before_script:
   - "inveniomanage database init --yes-i-know"
   - "inveniomanage database create"
   - "inveniomanage demosite create"
-  - "inveniomanage demosite populate"
+  - "inveniomanage demosite populate --file=invenio_demosite/data/labs_record_marc_data.xml"
 
 script:
   - "nosetests invenio_demosite/testsuite/regression"
