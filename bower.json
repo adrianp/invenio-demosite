@@ -1,0 +1,8 @@
+{
+  "name": "invenio-demosite-grunt",
+  "version": "0.1.0",
+  "dependencies": {
+    "intro.js": "https://github.com/adrianp/intro.js/archive/inveniolabs.zip",
+    "jquery-cookie": "*"
+  }
+}

@@ -48,3 +48,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# static file related
+bower_components/
+node_modules/
