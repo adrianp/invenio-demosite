@@ -1,0 +1,28 @@
+{#
+## This file is part of Invenio.
+## Copyright (C) 2013, 2014 CERN.
+##
+## Invenio is free software; you can redistribute it and/or
+## modify it under the terms of the GNU General Public License as
+## published by the Free Software Foundation; either version 2 of the
+## License, or (at your option) any later version.
+##
+## Invenio is distributed in the hope that it will be useful, but
+## WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with Invenio; if not, write to the Free Software Foundation, Inc.,
+## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+#}
+{% extends 'search/index.html' %}
+
+{% block custom_title %}
+   <div style="text-align: center; margin-top: 100px; margin-bottom: 100px;">
+     <div style="font-size: 500%; font-weight: bold; margin: 60px;"><img src="{{ url_for('static', filename='/img/logo_labs.png') }}" border="0"> Invenio Labs</div>
+     <div style="font-size: 180%; font-style: italic; color: #666; margin: 20px;">
+        “Playground for experimental features not quite ready for prime-time”{#{ collection.name }#}
+     </div>
+   </div>
+{% endblock custom_title %}
